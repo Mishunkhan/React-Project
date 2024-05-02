@@ -1,0 +1,83 @@
+﻿
+a {
+    color: #a22c65;
+    text-decoration: underline;
+}
+
+    a:hover {
+        color: #f72e16;
+    }
+
+    a.navbar-brand {
+        white-space: normal;
+        text-align: center;
+    }
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: #fff;
+}
+
+img, svg {
+    vertical-align: middle; 
+}
+
+.icon-spacing {
+    margin-right: 5px; 
+}
+
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #e0365d;
+    border-color: #cc3558;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.navbar {
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    /*flex-grow: 1;*/
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.navbar-toggler {
+    background-color: black;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    background-color: transparent;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.btn-primary {
+    color: #fff;
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}

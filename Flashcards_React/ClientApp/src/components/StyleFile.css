@@ -1,0 +1,121 @@
+/* BrowseDecks.css */
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+/*/////////////////////////////////////////////// Deck designs on BrowseDeck.js ///////////////////////////////////////////////////*/
+
+
+.deck {
+    --b: 2px; /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #192040;
+    margin: 30px auto;
+    width: 18rem;
+    height: 300px;
+    border-radius: calc(var(--s) * 2);
+    transition: .3s linear, background-color 0s;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+    .deck:hover {
+        transform: scale(0.9, 0.9);
+        background: linear-gradient(135deg, #d62a50, #f7770f);
+        color: #fff;
+    }
+
+.deck-body {
+    padding: 5px;
+}
+
+.title-white {
+    color: white;
+}
+
+.title-black {
+    color: black;
+}
+
+
+/* Custom Design Of Decks Bottom Buttons On Browse Decks Page */
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.create-deck-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 170px;
+    width: 100%;
+}
+
+.controller-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ********** Targetting Medium Devices ********** */
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .deck {
+        width: 15rem; 
+        height: 300px;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+        padding: 0.1rem;
+    }
+
+    .buttons-container {
+        height: 60%;
+    }
+
+    .create-deck-section {
+        min-height: 80px;
+        width: 100%;
+    }
+
+ 
+}
+
+
+/* ********** Targetting Large Devices ********** */
+
+@media (min-width: 769px) and (max-width: 1199px) {
+
+    .deck {
+        width: 15rem;
+        height: 300px;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+        padding: 0.1rem;
+    }
+  
+}
+
+/* ********** Targetting Extra Large Devices ********** */
+
+@media (min-width: 1200px) {
+
+    .deck {
+        width: 20rem;
+        height: 360px;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+        padding: 0.1rem;
+    }
+  
+}
